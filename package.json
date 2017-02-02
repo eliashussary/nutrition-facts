@@ -2,8 +2,10 @@
   "name": "nutrition-facts",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
+    "demo": "babel-node ./demo/demo",
+    "build": "babel ./src --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +18,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/eliash91/nutrition-facts"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8"
   }
 }
