@@ -105,7 +105,8 @@ const FoodItem = class FoodItem extends NutritionFacts {
     }
 
     /**
-     *
+     * Get nutrition method to retrieve individual food item.
+     * see: https://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md
      * @param {String} [reportType='b'] The report type to retrieve.
      * @returns {Promise} request-promise
      */

@@ -17,3 +17,13 @@ NF.searchFoods({
         })
 
 })
+
+// Alternatively, if you know the NDBNO off-hand
+// you can call 'getNutrition' from the NF instance.
+
+NF.getNutrition('01001','b')
+    .then(nutritionReport => {
+        console.log(nutritionReport)
+    }).catch(err => {
+    console.log(err)
+})
